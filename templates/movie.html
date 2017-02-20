@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Add a new movie</title>
+</head>
+
+<body>
+  <form action = "{{ url_for('addmovie') }}" method = "POST">
+    <h1>Add Movie</h1>
+    <p>Name:</p>
+    <input type = "text" name = "movie_name"><br>
+    <p>Year:</p>
+    <input type = "text" name = "movie_year"><br>
+    <p>Description:</p>
+    <input type = "textarea" name = "movie_description"><br>
+    <input type = "submit" value = "Submit" />
+  </form>
+</body>
+
+</head>
+</html>
